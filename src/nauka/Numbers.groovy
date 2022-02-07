@@ -4,6 +4,7 @@ class Numbers {
     static void main(String[] args) {
         int a = 10
         double b = 20.76
+        double bb = 20.500
         float c = -30.23
         float d = 10.000
         def e = 3233455345954959549
@@ -18,7 +19,13 @@ class Numbers {
         println(a.toString()) // konwersja inta na stringa
         println(x)
         println(c.abs()) // wartosc bezwzgledna
-        println(b.Math.ceil())
+        println(Math.ceil(b))
+        println(Math.floor(b).intValue())
+        println(Math.rint(b))
+        println(Math.rint(bb))  // rint - zaokrąglenie do najbliższej wartosci 1.500 zaokragli do 1 w przeciwienstwie do round
+        println(Math.rint(c).intValue())
+        println(Math.round(bb).intValue()) // round zaogragli 1.500 do 2.0
+
 
 
     }
