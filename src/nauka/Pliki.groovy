@@ -13,7 +13,14 @@ class Pliki {
         fileB << fileA.text
         fileB.delete()
 
+        def filePath = "src/example.txt"
+        File myFile = new File(filePath)
+        //println(myFile.text)
+        def list = myFile.collect {it}
+//        println(list)
+
     }
 }
 
 
+//  https://www.youtube.com/watch?v=Q8Xt98NoTo4&list=PLhW3qG5bs-L8T6v6DgsZo93DgYDmOF9u4&index=21

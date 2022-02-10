@@ -9,10 +9,10 @@ class Metody {
     protected int setX(newX){
         x=newX
     }
-    /*protected int range(int a, int b){
+    protected int range(int a, int b){
         def c = a..b
         println(c.step(10))
-    } */
+    }
 
     static void main(String[] args) {
         Metody met = new Metody()

@@ -1,36 +1,41 @@
 package nauka
 
-import org.apache.tools.ant.types.resources.selectors.None
+//import org.apache.tools.ant.types.resources.selectors.None
 
 class Klasy {
     static void main(String[] args) {
-        Student member = new Student();
-        member.setterSurname("Kowalski");
-        member.setterName("Błażej");
-        member.setterCountry("USA");
-//        println(member.getterFullName());
-        member.setterId(223);
-        member.addMarks(3);
-        member.addMarks(3);
-        member.addMarks(4);
-        member.addMarks(5);
-        member.addMarks(2);
-        /*println(member.getterMarks());
-        println(member.getAvgMarks());*/
+//        Student member = new Student();
+//        member.setterSurname("Kowalski");
+//        member.setterName("Błażej");
+//        member.setterCountry("USA");
+////        println(member.getterFullName());
+//        member.setterId(223);
+//        member.addMarks(3);
+//        member.addMarks(3);
+//        member.addMarks(4);
+//        member.addMarks(5);
+//        member.addMarks(2);
+//        /*println(member.getterMarks());
+//        println(member.getAvgMarks());*/
+//
+//        Job pracownik = new Job()
+//        pracownik.setterSurname("Jaworski")
+//        pracownik.setterName("Andrzej")
+//        pracownik.setterCountry("Poland")
+//        pracownik.setterPosition('Programista')
+//        pracownik.setterSallary(5000)
+//        /*println(pracownik.getterFullName())
+//        println(pracownik.getterInfo())*/
+//        println(pracownik.DisplayPerson())
+//        println(pracownik.DisplayJob())
+//        println("Next person")
+//        println(member.DisplayPerson())
+//        println(member.DisplayStudent())
+        Circle circle = new Circle()
+        circle.setR(15)
+        println(circle.obliczObwod())
+        println(circle.obliczPole())
 
-        Job pracownik = new Job()
-        pracownik.setterSurname("Jaworski")
-        pracownik.setterName("Andrzej")
-        pracownik.setterCountry("Poland")
-        pracownik.setterPosition('Programista')
-        pracownik.setterSallary(5000)
-        /*println(pracownik.getterFullName())
-        println(pracownik.getterInfo())*/
-        println(pracownik.DisplayPerson())
-        println(pracownik.DisplayJob())
-        println("Next person")
-        println(member.DisplayPerson())
-        println(member.DisplayStudent())
     }
 }
 
@@ -159,5 +164,17 @@ class Student extends Person {
 
     public Student() {
         super();
+    }
+}
+class Circle{
+    private def r
+    void setR(iR){
+        r = iR
+    }
+    float obliczObwod(){
+        return 2*Math.PI*r
+    }
+    float obliczPole(){
+        return Math.PI*r*r
     }
 }

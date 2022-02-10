@@ -26,7 +26,12 @@ class Numbers {
         println(Math.rint(c).intValue())
         println(Math.round(bb).intValue()) // round zaogragli 1.500 do 2.0
 
-
-
+        // konwersja na inny system liczbowy
+        println(Integer.toBinaryString(42445231))
+        println(Integer.toHexString(125))
+        println(Integer.parseInt("1010101110",2))
+        println(Integer.parseInt("356",8))
+        def out = (1>0) ? "Yes" : "No"
+        println(out)
     }
 }

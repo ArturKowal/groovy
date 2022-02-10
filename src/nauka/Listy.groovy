@@ -3,6 +3,8 @@ package nauka
 class Listy {
     static void main(String[] args) {
         def lista = [1,2,3,4,5,6,7,8]
+        def myList = [6,7,8,9,11]
+
         lista.add(0)
         println(lista)
 
@@ -18,6 +20,7 @@ class Listy {
         println(lista.size()) // zwraca rozmiar listy
         lista.sort()
         println(lista.toString())
+        println(myList.intersect(lista)) //część wspólna
 
     }
 }

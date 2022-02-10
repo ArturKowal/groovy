@@ -40,7 +40,17 @@ class Generyki {
         lststr.set()
 //        lststr.set(3)
 //        lststr.set(5)
-        //println(lstint.get())
+        //println(lstint.get())\
+        def a = 2
+        def b = ++a *3
+        assert b == 9  // assert do kontrolowania czy wynik z lewej strony jest równy temu z prawej
+
+        def myList = [1,2,3,4,5,6]
+        println(myList.find( {item -> item == 3}))
+        println(myList.findAll( {item -> item > 3}))
+        println(myList.any( {item -> item > 5 }))
+        println(myList.every( {item -> item > 4}))
+        println(myList.collect( {item -> item *3 }))
     }
 }
 

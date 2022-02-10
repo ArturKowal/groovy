@@ -22,6 +22,10 @@ class Stringi {
         println((5..50000).step(2345).get(8))
         println((5..50000).step(2345))
 
+        println(napis.indexOf("w"))  // jaki ma indeks litera w w napis
+        println(napis-("world"))
+        println(napis.replace("world","girl"))
+        println(napis.toList())
     }
 }
 /*
